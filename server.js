@@ -11,8 +11,9 @@ app.use(bodyParser.json())
 
 app.get('/', function(req,res)
 {
+    let testvar = process.env.test
     console.log("okay");
-    res.send("You are Connected")
+    res.send("You are Connected", testvar)
     res.render("okay")
 })
 
