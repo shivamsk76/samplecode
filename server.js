@@ -9,7 +9,7 @@ const cors = require('cors')
 const PORT = process.env.port || 8080
 app.use(bodyParser.json())
 
-app.get('/process.env.backendserver', function(req,res)
+app.get('/', function(req,res)
 {
     console.log("okay");
     res.send("You are Connected")
